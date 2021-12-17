@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.home{
+    min-height: 100vh;
+}
+
+.home.dark{
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+.home.light{
+    background: whitesmoke;
+    color: #1f1f1f;
+}
+
+.home .header{
+    height: 300px;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: url(./bg.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.home .body{
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-25vh);
+    /* background: red; */
+}
+
+.home .body .todo-contain{
+    width: 550px;
+    padding: 0 20px;
+}
+
+.home .toggle-contain{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.home .toggle-contain > div{
+    flex: 1;
+}
+
+.home .toggle-contain > div:nth-last-child(1){
+    display: flex;
+    justify-content: end;
+}
+
+.home .toggle-btn{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.home .input-contain{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.home.light .input-contain{
+    background: white;
+    color: #2e2e2e;
+}
+
+.home.dark .input-contain{
+    background: #25273c;
+    color: white;
+}
+
+.home .input-contain .icon{
+    width: 10%;
+    height: 80%;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home.light .input-contain .icon{
+    color: #111;
+    border-right: 1.5px solid #e0e0e0;
+}
+
+.home.dark .input-contain .icon{
+    border-right: 1.5px solid #2e2e2e;
+}
+
+.home .input-contain input{
+    width: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
+    color: inherit;
+}
+
+.home .list-contain .list{
+    padding: 15px 5px;
+    display: flex;
+}
+
+.home.light .list-contain .list{
+    background: white;
+    color: #111;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.home.dark .list-contain .list{
+    background: #25273c;
+    color: #ffffff;
+    border-bottom: 1px solid #444242;
+}
+
+.home .list-contain .list .checker{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.home .list-contain .list .text{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.home .list-contain .list .text.done{
+    text-decoration-line: line-through;
+}
+
+.home .list-contain .list .delete-btn{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.home .list-contain .list .delete-btn > button{
+    border: none;
+    background: none;
+    font-size: 1em;
+    opacity: 0;
+    cursor: pointer;
+    color: inherit;
+}
+
+.home .list-contain .list:hover .delete-btn > button{
+    opacity: 1;
+}
+
+.home .list-contain .notodo{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home.light .list-contain .notodo{
+    background: white;
+    color: #111;
+}
+
+.home.dark .list-contain .notodo{
+    background: #25273c;
+    color: #ffffff;
+}
+
+.home .list-contain .notodo i{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
