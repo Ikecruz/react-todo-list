@@ -1,4 +1,4 @@
-const TodoList = ({ todos, handleCheck, handleDelete}) => {
+const TodoList = ({ todos, handleCheck, handleDelete, remainingTodos, handleClearCompleted, handleClearAll}) => {
     return(
         <div className="main-list-container">
             {
@@ -18,6 +18,15 @@ const TodoList = ({ todos, handleCheck, handleDelete}) => {
                     </div>
                 ))
             }
+            <div className="list-footer">
+                <div className="count">{ remainingTodos() } todos left</div>
+                <div>
+                    <button onClick={handleClearCompleted}>Clear Completeed</button>
+                </div>
+                <div>
+                    <button onClick={handleClearAll}>Clear All</button>
+                </div>
+            </div>
         </div>
     );
 }
