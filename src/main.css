@@ -55,7 +55,7 @@
 
 .home .toggle-contain > div:nth-last-child(1){
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .home .toggle-btn{
