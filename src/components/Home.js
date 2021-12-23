@@ -3,6 +3,7 @@ import Header from './Header';
 import NoTodo from './NoTodo';
 import TodoList from './TodoList';
 import {getTodos, addTodos} from '../store/data';
+import Footer from './Footer';
 
 const Home = () => {
     let [lightMode, setLightMode] = useState(true);
@@ -91,6 +92,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

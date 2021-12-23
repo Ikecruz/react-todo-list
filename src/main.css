@@ -226,3 +226,35 @@
     font-size: 3em;
     margin-bottom: 20px;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contain{
+    width: 700px;
+    text-align: center;
+}
+
+.footer .author-name{
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.footer .icon-contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.footer .icon-contain li{
+    margin: 0 20px;
+    font-size: 1.7em;
+}
+
+.footer .icon-contain li a{
+    color: inherit;
+}
