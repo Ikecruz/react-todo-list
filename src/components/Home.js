@@ -47,11 +47,7 @@ const Home = () => {
         setTodo('');
     }
 
-    const remainingTodos = () => {
-        let newarr = todos.filter((todo) => todo.done !== true);
-
-        return newarr.length;
-    }
+    const remainingTodos = () => todos.filter((todo) => todo.done !== true).length;
 
     const handleClearCompleted = () => {
         let newarr = todos.filter((todo) => todo.done !== true);

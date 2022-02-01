@@ -15,7 +15,7 @@ const Footer = () => {
                         <a href="https://www.linkedin.com/in/onyeka-ikedinobi-98538b204/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/dev.cruz_/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/ikxcrxz/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
